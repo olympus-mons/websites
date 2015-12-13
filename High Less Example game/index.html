@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>High Less Game</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<!--<form action="/post" id="submissionForm">-->
+    <div class="row">
+        <div class="col-md-6">
+            Please Enter your value :
+        </div>
+        <div class="col-md-6">
+            <input type="number" id="inputBox" required="required"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <input type="submit" value="Submit" id="submitVal"/>
+        </div>
+    </div>
+<!--</form>-->
+<div class="row">
+    <div class="col-md-12" id="resultContainer" style="color: red;">
+
+    </div>
+</div>
+</body>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/usingjs.js"></script>
+<script>
+    function getRandomValue(min, max){
+        window.random = Math.floor((Math.random() * max) + min);
+    }
+    getRandomValue(1, 10);
+</script>
+</html>
