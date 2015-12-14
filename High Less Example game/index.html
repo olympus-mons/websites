@@ -3,28 +3,34 @@
 <head>
     <title>High Less Game</title>
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <!--<form action="/post" id="submissionForm">-->
-    <div class="row">
-        <div class="col-md-6">
-            Please Enter your value :
-        </div>
-        <div class="col-md-6">
-            <input type="number" id="inputBox" required="required"/>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <input type="submit" value="Submit" id="submitVal"/>
-        </div>
-    </div>
-<!--</form>-->
-<div class="row">
-    <div class="col-md-12" id="resultContainer" style="color: red;">
+    <div class="container">
+            <div class="row well">
+                <div class="col-md-6">
+                    <h4>
+                        Please Enter your value :
+                    </h4>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" id="inputBox" required="required"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 submit-button">
+                    <input class = "btn btn-primary btn-lg" type="submit" value="Submit" id="submitVal"/>
+                     <a class ="btn btn-primary btn-lg" href="index.html">Clear</a>
+                </div>
+            </div>
+        <!--</form>-->
+        <div class="row">
+            <div class="col-md-12" id="resultContainer" style="color: red;">
 
+            </div>
+        </div>
     </div>
-</div>
 </body>
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.js"></script>
